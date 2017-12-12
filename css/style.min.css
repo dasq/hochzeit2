@@ -1208,7 +1208,7 @@ section[data-section=menu] {
 }
 
 .menus li .text h3 {
-    margin: 15px 0 0;
+    margin: 0 0 10px 0;
     font-size: 18px;
     text-transform: uppercase;
     color: #000
@@ -2068,7 +2068,7 @@ section[data-section=menu] {
 .flexslider,
 .flexslider .slides>li,
 .slider-height {
-    height: 550px
+    height: 750px
 }
 
 .probootstrap-heading .primary-heading {
@@ -2528,7 +2528,45 @@ section[data-section=menu] {
 #slide2{background-image: url("../img/hochzeit_ss.jpg");  background-repeat: no-repeat; background-size: 100% auto;}
 #slide3{background-image: url("../img/faridbenmiles-bw.jpg");  background-repeat: no-repeat; background-size: 100% auto;}
 
+.solist-row{clear:both;}
+.solist-row figure {text-align:center}
+.solist-row h3{text-align:left}
 
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
 
 @media screen and (max-width:768px) {
 	.ref figure {width:40%;float:left; margin:10px}
